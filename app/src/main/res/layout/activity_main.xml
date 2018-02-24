@@ -74,27 +74,63 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/TeamARedCards"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_weight="1">
 
-            <TextView
-                android:id="@+id/TeamAYellowCards"
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconred" />
+
+                <TextView
+                    android:id="@+id/TeamARedCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconred" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconyellow" />
+
+                <TextView
+                    android:id="@+id/TeamAYellowCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconyellow" />
+
+            </LinearLayout>
 
             <FrameLayout style="@style/frame_button">
 
@@ -191,27 +227,59 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/TeamBRedCards"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconred" />
+
+                <TextView
+                    android:id="@+id/TeamBRedCards"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconred" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconyellow" />
 
             <TextView
                 android:id="@+id/TeamBYellowCards"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
                 android:layout_weight="1"
                 android:text="0"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/iconyellow" />
+            </LinearLayout>
 
             <FrameLayout style="@style/frame_button">
 
@@ -265,6 +333,6 @@
         android:background="@android:drawable/dialog_holo_light_frame"
         android:onClick="reset"
         android:text="@string/reset_button_text"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
 </RelativeLayout>
