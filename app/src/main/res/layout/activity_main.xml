@@ -45,16 +45,34 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/TeamAScore"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/football_pattern" />
+
+                <TextView
+                    android:id="@+id/TeamAScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/football_pattern" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/TeamARedCards"
@@ -88,7 +106,7 @@
 
                 <TextView
                     style="@style/frame_text"
-                    android:text="@string/add1text"/>
+                    android:text="@string/add1text" />
 
             </FrameLayout>
 
@@ -102,7 +120,7 @@
 
                 <TextView
                     style="@style/frame_text"
-                    android:text="@string/add1text"/>
+                    android:text="@string/add1text" />
 
             </FrameLayout>
 
@@ -116,7 +134,7 @@
 
                 <TextView
                     style="@style/frame_text"
-                    android:text="@string/add1text"/>
+                    android:text="@string/add1text" />
             </FrameLayout>
         </LinearLayout>
 
@@ -144,16 +162,34 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/TeamBScore"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_weight="1"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/football_pattern" />
+
+                <TextView
+                    android:id="@+id/TeamBScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    style="@style/icon_ball"
+                    android:src="@drawable/football_pattern" />
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/TeamBRedCards"
@@ -187,7 +223,7 @@
 
                 <TextView
                     style="@style/frame_text"
-                    android:text="@string/add1text"/>
+                    android:text="@string/add1text" />
             </FrameLayout>
 
             <FrameLayout style="@style/frame_button">
@@ -200,7 +236,7 @@
 
                 <TextView
                     style="@style/frame_text"
-                    android:text="@string/add1text"/>
+                    android:text="@string/add1text" />
             </FrameLayout>
 
             <FrameLayout style="@style/frame_button">
@@ -213,7 +249,7 @@
 
                 <TextView
                     style="@style/frame_text"
-                    android:text="@string/add1text"/>
+                    android:text="@string/add1text" />
             </FrameLayout>
         </LinearLayout>
 
