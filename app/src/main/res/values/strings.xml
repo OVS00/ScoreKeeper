@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="add1text">+1</string>
+    <string name="reset_button_text">Reset</string>
 </resources>
