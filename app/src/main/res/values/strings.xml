@@ -2,4 +2,10 @@
     <string name="app_name">Score Keeper</string>
     <string name="add1text">+1</string>
     <string name="reset_button_text">Reset</string>
+    <string name="font_fam">cursive</string>
+    <string name="title">Score Keeper</string>
+    <string name="team_a">Team A</string>
+    <string name="initial_value">0</string>
+    <string name="text_separator" />
+    <string name="team_b">Team B</string>
 </resources>

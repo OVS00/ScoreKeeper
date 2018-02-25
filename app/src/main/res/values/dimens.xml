@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">48sp</dimen>
+    <dimen name="out_margin">12dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_margin">8dp</dimen>
+    <dimen name="margin_separator">3dp</dimen>
+    <dimen name="margin_reset">12dp</dimen>
+    <dimen name="text_size_reset">18sp</dimen>
+    <dimen name="icon_size">18dp</dimen>
+    <dimen name="frame_text_size">18sp</dimen>
+    <dimen name="frame_padding">12dp</dimen>
+    <dimen name="frame_button_margin">32dp</dimen>
+</resources>

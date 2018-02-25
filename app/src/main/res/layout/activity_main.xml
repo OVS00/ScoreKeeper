@@ -1,133 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:adjustViewBounds="true"
-    android:background="@drawable/green1"
+    style="@style/relative_style"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="cursive"
-        android:gravity="center_horizontal"
-        android:text="Score Keeper"
-        android:textColor="#000000"
-        android:textSize="48sp"
-        android:textStyle="bold" />
+        style="@style/title_style"
+        android:text="@string/title" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/Reset"
-        android:layout_below="@+id/Title"
-        android:layout_margin="12dp"
-        android:orientation="horizontal">
+    <LinearLayout style="@style/main_body_style">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <LinearLayout style="@style/column_style">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_weight="1"
-                android:text="Team A"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                style="@style/team_title_style"
+                android:text="@string/team_a" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1">
+            <LinearLayout style="@style/values_box_style">
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/football_pattern" />
 
                 <TextView
                     android:id="@+id/TeamAScore"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    style="@style/values_style"
+                    android:text="@string/initial_value" />
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/football_pattern" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1">
+            <LinearLayout style="@style/values_box_style">
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconred" />
 
                 <TextView
                     android:id="@+id/TeamARedCards"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    style="@style/values_style"
+                    android:text="@string/initial_value" />
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconred" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1">
+            <LinearLayout style="@style/values_box_style">
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconyellow" />
 
                 <TextView
                     android:id="@+id/TeamAYellowCards"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    style="@style/values_style"
+                    android:text="@string/initial_value" />
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconyellow" />
 
             </LinearLayout>
@@ -175,109 +111,61 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="3dp"
-            android:background="#1DE9B6"
-            android:text=" " />
+            style="@style/separator_style"
+            android:text="@string/text_separator" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <LinearLayout style="@style/column_style">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_weight="1"
-                android:text="Team B"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                style="@style/team_title_style"
+                android:text="@string/team_b" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1">
+            <LinearLayout style="@style/values_box_style">
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/football_pattern" />
 
                 <TextView
                     android:id="@+id/TeamBScore"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    style="@style/values_style"
+                    android:text="@string/initial_value" />
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/football_pattern" />
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1">
+            <LinearLayout style="@style/values_box_style">
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconred" />
 
                 <TextView
                     android:id="@+id/TeamBRedCards"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textColor="#000000"
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    style="@style/values_style"
+                    android:text="@string/initial_value" />
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconred" />
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="1">
+
+            <LinearLayout style="@style/values_box_style">
 
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconyellow" />
 
-            <TextView
-                android:id="@+id/TeamBYellowCards"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_weight="1"
-                android:text="0"
-                android:textColor="#000000"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/TeamBYellowCards"
+                    style="@style/values_style"
+                    android:text="@string/initial_value" />
+
                 <ImageView
-                    style="@style/icon_ball"
+                    style="@style/icon"
                     android:src="@drawable/iconyellow" />
             </LinearLayout>
 
@@ -325,14 +213,8 @@
 
     <Button
         android:id="@+id/Reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:background="@android:drawable/dialog_holo_light_frame"
+        style="@style/reset_style"
         android:onClick="reset"
-        android:text="@string/reset_button_text"
-        android:textSize="18sp" />
+        android:text="@string/reset_button_text" />
 
 </RelativeLayout>
